@@ -1,17 +1,17 @@
 graphql
 =======
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/shurcooL/graphql.svg)](https://pkg.go.dev/github.com/shurcooL/graphql)
+[![Go Reference](https://pkg.go.dev/badge/github.com/mdcharaf/graphql.svg)](https://pkg.go.dev/github.com/mdcharaf/graphql)
 
 Package `graphql` provides a GraphQL client implementation.
 
-For more information, see package [`github.com/shurcooL/githubv4`](https://github.com/shurcooL/githubv4), which is a specialized version targeting GitHub GraphQL API v4. That package is driving the feature development.
+For more information, see package [`github.com/mdcharaf/githubv4`](https://github.com/mdcharaf/githubv4), which is a specialized version targeting GitHub GraphQL API v4. That package is driving the feature development.
 
 Installation
 ------------
 
 ```sh
-go get github.com/shurcooL/graphql
+go get github.com/mdcharaf/graphql
 ```
 
 Usage
@@ -279,8 +279,8 @@ Directories
 
 | Path                                                                                  | Synopsis                                                                                                        |
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [ident](https://pkg.go.dev/github.com/shurcooL/graphql/ident)                         | Package ident provides functions for parsing and converting identifier names between various naming convention. |
-| [internal/jsonutil](https://pkg.go.dev/github.com/shurcooL/graphql/internal/jsonutil) | Package jsonutil provides a function for decoding JSON into a GraphQL query data structure.                     |
+| [ident](https://pkg.go.dev/github.com/mdcharaf/graphql/ident)                         | Package ident provides functions for parsing and converting identifier names between various naming convention. |
+| [internal/jsonutil](https://pkg.go.dev/github.com/mdcharaf/graphql/internal/jsonutil) | Package jsonutil provides a function for decoding JSON into a GraphQL query data structure.                     |
 
 License
 -------

@@ -7,10 +7,10 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/shurcooL/graphql/ident"
+	"github.com/mdcharaf/graphql/ident"
 )
 
-func constructQuery(v any, variables map[string]any) string {
+func ConstructQuery(v any, variables map[string]any) string {
 	query := query(v)
 	if len(variables) > 0 {
 		return "query(" + queryArguments(variables) + ")" + query
@@ -18,7 +18,7 @@ func constructQuery(v any, variables map[string]any) string {
 	return query
 }
 
-func constructMutation(v any, variables map[string]any) string {
+func ConstructMutation(v any, variables map[string]any) string {
 	query := query(v)
 	if len(variables) > 0 {
 		return "mutation(" + queryArguments(variables) + ")" + query
@@ -70,7 +70,7 @@ func writeArgumentType(w io.Writer, t reflect.Type, value bool) {
 	default:
 		// Named type. E.g., "Int".
 		name := t.Name()
-		if name == "string" { // HACK: Workaround for https://github.com/shurcooL/githubv4/issues/12.
+		if name == "string" { // HACK: Workaround for https://github.com/mdcharaf/githubv4/issues/12.
 			name = "ID"
 		}
 		io.WriteString(w, name)
